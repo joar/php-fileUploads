@@ -15,7 +15,7 @@
 		public function file( $key ) {
 			return $this->uploads[ $key ];
 		}
-		public function empty() {
+		public function _empty() {
 			return $this->_empty;
 		}
 		public function init() {
