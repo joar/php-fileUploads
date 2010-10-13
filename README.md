@@ -1,20 +1,21 @@
 # PHP File upload
 
 ## Usage example
-
-	tools::preint_r( $uploads );
+	$uploads = new fileUploads();
+	$uploads->init();
+	debug_tools::preint_r( $uploads );
 	$uploads->file('file')->move('tmp/file.csv');
-	tools::preint_r( $uploads );
+	debug_tools::preint_r( $uploads );
 	$uploads->file('file')->unlink();
-	tools::preint_r( $uploads );
+	debug_tools::preint_r( $uploads );
 	
 ### Output
 	
-	file_uploads Object
+	fileUploads Object
 	(
 	    [uploads:private] => Array
 	        (
-	            [file] => file_upload Object
+	            [file] => fileUpload Object
 	                (
 	                    [base_path:private] => /mounted-storage/home77b/sub006/sc30932-XMAI/electroluxmail.com/converter.electroluxmail.com/
 	                    [key:private] => file
@@ -34,11 +35,11 @@
 	
 	    [_empty:private] => 
 	)
-	file_uploads Object
+	fileUploads Object
 	(
 	    [uploads:private] => Array
 	        (
-	            [file] => file_upload Object
+	            [file] => fileUpload Object
 	                (
 	                    [base_path:private] => /mounted-storage/home77b/sub006/sc30932-XMAI/electroluxmail.com/converter.electroluxmail.com/
 	                    [key:private] => file
@@ -63,11 +64,11 @@
 	
 	    [_empty:private] => 
 	)
-	file_uploads Object
+	fileUploads Object
 	(
 	    [uploads:private] => Array
 	        (
-	            [file] => file_upload Object
+	            [file] => fileUpload Object
 	                (
 	                    [base_path:private] => /mounted-storage/home77b/sub006/sc30932-XMAI/electroluxmail.com/converter.electroluxmail.com/
 	                    [key:private] => file
